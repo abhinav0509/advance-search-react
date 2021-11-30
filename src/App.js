@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-
+import BookData from "./data.json";
+import Search from "./Search.js";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h4 className="mt-4 text-center">Book Store</h4>
+      <Search BookData={BookData} />
     </div>
   );
 }
